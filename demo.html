@@ -1,0 +1,448 @@
+<html>
+    <head>
+        <title id="Demo">
+            The title
+        </title>
+        <script type="text/javascript">
+            // document.write("Hello World");
+            // window.alert("Hi");
+            // console.log("What is up?");
+
+            //Variables
+            // var price;
+            // price = 20;
+            // document.write(price); 
+
+
+            //Operations
+            // var a = 10; 
+            // var b = 20;
+            // var results;
+            // results = a + b;
+            // document.write(results);
+
+
+            //Coding challenge 1
+            // var number = 7;
+            // document.write(number); [displayed on browser]
+            // var Name = "Karan";
+            // console.log(Name); [displayed on console]
+
+
+            //Function
+            // function display(){
+            //     document.write("Hello");
+            // }   //created the function
+            // display(); //calling the display function
+
+
+            //Function with parameters
+            // function add(a,b){
+            //     return a+b;
+            // }
+            // var c = add(398,323);
+            // document.write(c);
+
+
+            //Objects
+            // var person = {
+            //     name:'John',
+            //     age:30,
+            //     job: "Doctor"
+            // };
+            // document.write(person.job);
+
+
+            //Coding Challenge
+            // function message (){
+            //     document.write("Hey, it's me");
+            // }
+            // message();
+
+            // function square(number){
+            //     var result =  number * number;
+            //     document.write(result);
+            // }
+            // square(4);
+
+            // function add(num1,num2,num3){
+            //     return num1 + num2 + num3;
+            // }
+            // document.write(add(100,200,250));
+
+
+            //Coding challenge
+            // var car = {
+            //     brand:"kia",
+            //     name:"forte",
+            //     year:2023
+            // };
+            // car.year = 2022;
+            // document.write(car.year);
+            
+            // var car = {
+            //     state:"used"
+            // };
+
+            // function press(){
+            //     car.state="new";
+            //     document.write(car.state);
+            // }
+
+
+            //String Length
+            // var x = "John";
+            // document.write(x.length);
+
+
+            //String methods
+            //IndexOf
+            // var x = "My name is Karan";
+            // var pos = x.indexOf("Karan");
+            // document.write(pos);
+            
+            // //Search
+            // var x = "My name is Karan, this is Karan";
+            // var pos = x.search("Karan");
+            // document.write(pos);
+
+            //Slice
+            // var x = "My name is Karan, this is Karan";
+            // var y = x.slice(1,5);
+            // document.write(y);
+
+            //Substring
+            // var x = "My name is Karan, this is Karan";
+            // var y = x.substr(3,11);
+            // document.write(y);
+
+            //Replace
+            // var x = "My name is Karan, this is Karan";
+            // var y = x.replace("Karan","John");
+            // document.write(y);
+
+            //ToUpperCase
+            // var x = "My name is Karan, this is Karan";
+            // var y = x.toUpperCase();
+            // document.write(y);
+
+            //ToLowerCase
+            // var x = "My name is Karan, this is Karan";
+            // var y = x.toLowerCase();
+            // document.write(y);
+            
+            //ToString
+            // var number = 100;
+            // var x = number.toString();
+            // document.write(x);
+
+            //ToFixed
+            // var x = 22/7;
+            // x = x.toFixed(1);
+            // document.write(x);
+
+            //ParseInt
+            // var a = "100";
+            // var b = 200;
+            // var c = parseInt(a) + b;
+            // document.write(c);
+
+
+            //Mathematical methods
+            //Math.round()
+            // document.write(Math.round(4.7));
+
+            //Power
+            // document.write(Math.pow(10,3));
+
+            //Square root
+            // document.write(Math.sqrt(49));
+
+            //Absolute
+            // document.write(Math.abs(58.9));
+
+            //Ceiling
+            // document.write(Math.ceil(4.3)); [output - 5]
+
+            //Floor
+            // document.write(Math.floor(4.8)); [output - 4]
+            
+
+            //Arrays
+            // var names = ["Karan", "Lav", "Yogesh"];
+            // var len = names.length; //length of the array
+            // document.write(len);
+            
+            // names.push("Jay"); //add one more element in the array
+            // document.write(names[3]);
+
+            //Array Methods
+            //toString
+            // var names = ["Karan", "Lav", "Yogesh"];
+            // var x = names.toString();
+            // document.write(x); //Output - Karan,Lav,Yogesh
+
+            // Pop
+            // var x = names.pop();
+            // document.write(x); //Output - Yogesh
+
+            //Shift
+            // var x = names.shift();
+            // document.write(x); //Output - Karan 
+
+            //Unshift
+            // names.unshift("Sukhvir");
+            // var x = names.toString();
+            // document.write(x); //Output - Sukhvir,Karan,Lav,Yogesh
+
+            //Delete
+            // delete names[1];
+            // var x = names.toString();
+            // document.write(x);
+
+            //Concat
+            // var numbers = [1,2,3];
+            // var new_array = names.concat(numbers);
+            // var x = new_array.toString();
+            // document.write(x);
+
+            //Coding Challenge 5
+            // var str = "We are \"The gems\" of this century";
+            // var len = str.length;
+            // document.write(len);
+            // document.write(str.toUpperCase());
+
+            //Coding Challenge 6
+            // var x = "10";
+            // var y = 20;
+            // var result = parseInt(x) + y;
+            // document.write(result);
+
+            // var fruits = ["Mango", "Banana", "Pear", "Orange", "Apple"];
+            // document.write(fruits[1]);
+            // fruits.push("Strawberry");
+            // document.write("<br>"+fruits.toString());
+
+            // fruits.pop();
+            // document.write("<br>"+fruits.toString());
+
+
+            //If statement
+            // var age = 34;
+            // if(age > 18){
+            //     document.write("You are an adult");
+            // }
+            // else{
+            //     document.write("You are not an adult");
+            // }
+            
+            //Coding Challenge 8
+            // var product = {
+            //     category: "electronic",
+            //     price: 100
+            // };
+
+            // if(product.category == "electronic" || product.price > 100){
+            //     document.write("You get 10% discount");
+            // }
+            // else{
+            //     document.write("You have no discount");
+            // }
+
+            
+            //For Loop
+            // for(counter = 0; counter < 5; counter++){
+            //     document.write("Hello <br>");
+            // }
+
+            
+            //While Loop
+            // var i = 0;
+            // while(i < 5){
+            //     document.write("Hello World <br>");
+            //     i++;
+            // }
+
+
+            //Coding Challenge 9
+            //Task 1
+            // for(counter = 1; counter <= 100; counter++){
+            //     document.write(counter + "<br>");
+            // }
+
+            //Task 2
+            // var number = 1;
+            // while(number <= 20){
+            //     document.write(number**2 + "<br>");
+            //     number++;
+            // }
+            
+
+            //Coding Challenge 10
+            // var rating = 3;
+            // switch(rating){
+            //     case 1: document.write("Very Poor");
+            //             break;
+
+            //     case 2: document.write("Poor");
+            //             break;
+
+            //     case 3: document.write("Good");
+            //             break;
+
+            //     case 4: document.write("Very Good");
+            //             break;
+
+            //     case 5: document.write("Excellent");
+            //             break;
+
+            //     default: document.write("Invalid rating");
+            // }
+
+
+            //Regular Expression
+            // var pat = /egg/i;
+            // var x = "I ate an egg";
+            // var n = x.search(pat);
+            // var n = x.replace(pat,"apple");
+            // document.write(n);
+
+
+            //Coding Challenge 11
+            // var number = "1234567890";
+            // try{
+            //     if(number.length != 10){
+            //         throw("Please enter a 10 digit number");
+            //     }
+            //     else{
+            //         document.write(number);
+            //     }
+            // }catch(e){
+            //     alert("Error: "+e);
+            // }finally{
+            //     document.write("<br> Finish");
+            // }
+
+
+            //Coding Challenge 12
+            // var message = "I like apple, do you like apple?";
+            // var fruit = /apple/g;
+            // var sent = message.replace(fruit,"banana");
+            // document.write(sent);
+            
+
+            //Hoisting
+            // x = 10;
+            // document.write(x);
+            // var x;
+
+
+            //Coding Challenge 13
+            // var productPrice = 100;
+
+            // function displayPrices(){
+
+            //     var discountedProductPrice = productPrice - 50;
+            //     document.write(discountedProductPrice);
+            // }
+
+            // displayPrices();
+
+         
+            
+
+            //Add Nodes
+
+
+        </script>
+    </head>
+    <body>
+        <!-- <button id="newButton">Click Here</button> -->
+        <!-- <p id="pr"></p> -->
+        <!-- <p id="dr"></p> -->
+        <!-- <p id="p1">Wassup</p> -->
+
+        <!-- DOM event -->
+        <!-- <h1 onclick="this.innerHTML = 'You clicked here'">Click here</h1>
+        <h1 onclick="this.style.color = 'blue'">Click here</h1> -->
+        
+        <!-- <div id="divone">
+            <p id="para1">This is para1</p>
+            <p>I am not your child</p>
+        </div> -->
+
+        <!-- <p id="para1">What is up?</p>
+        <button id="btn1" onclick="change()">Click here to change the text</button> -->
+        
+        <!-- <label id="lb">Primary</label><br>
+        <input type="text" id="text1"><br>
+        <button onclick="change()">Click here</button> -->
+
+
+        <script type="text/javascript">
+            //DOM Method
+            //Accessing element by ID
+            // document.getElementById("pr").innerHTML = "This is a Paragraph";
+
+            //Accesing element by tag name
+            // document.getElementsByTagName("p")[1].innerHTML = "This is second paragraph";
+            
+
+           // Changing styling
+           // document.getElementById("p1").style.color = "red";
+
+            //DOM event listener
+            // document.getElementById("newButton").addEventListener("click",displayAlert);
+
+            // function displayAlert(){
+            //     alert("Button clicked");
+            // }
+
+
+               //Intro to Node
+            // var myTitle = document.getElementById("Demo").firstChild.nodeValue;
+            // document.write(myTitle);
+
+            // var myTitle = document.getElementById("Demo").nodeName;
+            // document.write(myTitle);
+
+
+            //Adding node
+            // var para = document.createElement("p");
+            // var paratextnode = document.createTextNode("This is the text for new para");
+            // para.appendChild(paratextnode);
+            // var e = document.getElementById("divone");
+            // e.appendChild(para);
+
+            
+            //Coding Challenge 15
+            // function change(){
+            //     document.getElementById("para1").innerHTML = "I told you, it will change";
+            // }
+            
+
+            //Coding Challenge 16
+            // function change(){
+
+            //     var txt = document.getElementById("text1").value;
+            //     document.getElementById("lb").innerHTML = txt;
+            // }
+
+
+            //Deleting child using node
+            // var parent = document.getElementById("divone");
+            // var child = document.getElementById("para1");
+            // parent.removeChild(child);
+
+
+            //BOM
+            // document.write(screen.width);
+
+
+            //Accessing URL
+            // document.write(window.location.href);
+            // document.write(window.location.pathname);
+
+        </script>
+    </body>
+</html>
